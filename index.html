@@ -18,26 +18,27 @@
 
 <body class="max-w-[1240px] mx-auto">
 
-  <header class="  ">
-    <nav class="py-3  px-3 sm:px-12 flex justify-between items-center">
-      <div class="flex sm:gap-2 gap-1">
-        <img class="w-[40px] sm:w-[50px] h-[40px] sm:h-[50px]" src="./assets/logo.png" alt="">
-        <h2 class="font-semibold text-sm sm:font-bold text-[#006747]">Emergency <br> Service</h2>
+  <header id="header">
+    <nav class="py-3  px-3 lg:px-12 flex justify-between items-center">
+      <div class="flex lg:gap-2 gap-1">
+        <img class="w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]" src="./assets/logo.png" alt="">
+        <h2 class="font-semibold text-sm lg:font-bold text-[#006747]">Emergency <br> Service</h2>
       </div>
 
-      <div class="flex gap-1 sm:gap-5">
-        <div class="flex text-sm bg-[#41ff6b1a] py-2 px-2 sm:px-6 rounded-full gap-1">
-          <span>0</span>
-          <img  class="w-[20px] h-[20px]"  src="./assets/heart.png" alt="">
+      <div class="flex gap-1 lg:gap-5">
+        <div class="flex text-sm bg-[#41ff6b1a] py-2 px-2 lg:px-6 rounded-full gap-1">
+          <span id="heartNumber">0</span>
+          <img class="w-[20px] h-[20px]" src="./assets/heart.png" alt="">
         </div>
-        <div class="flex text-sm bg-[#41ff6b1a] py-2 px-2 sm:px-5 rounded-full gap-1">
-          <span>100</span>
-          <img  class="w-[20px] h-[20px]"  src="./assets/coin.png" alt="">
+        <div class="flex text-sm bg-[#41ff6b1a] py-2 px-2 lg:px-5 rounded-full gap-1">
+          <span id="pointNumber">100</span>
+          <img class="w-[20px] h-[20px]" src="./assets/coin.png" alt="">
         </div>
 
-        <div class="flex justify-between items-center text-[#FFFFFF] bg-[#00A63E] sm:py-3 px-2 text-sm sm:px-8 rounded-full font-semibold">
+        <div
+          class="flex justify-between items-center text-[#FFFFFF] bg-[#00A63E] lg:py-3 px-2 text-sm lg:px-8 rounded-full font-semibold">
           <button class="block">
-            <span class="mr-1 sm:mr-2">2</span>Copy
+            <span class="mr-1 lg:mr-2" id="copyNumber">0</span>Copy
           </button>
         </div>
 
@@ -47,214 +48,240 @@
 
   <main>
     <!-- banner section  -->
-    <section  class="bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] py-4 w-full gap-2 flex flex-col items-center justify-center text-center ">
-      
+    <section
+      class="bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] py-4 w-full gap-2 flex flex-col items-center justify-center text-center ">
+
       <img src="./assets/logo-dark.png" class="w-[92px] h-[92px] " alt="">
       <h2 class="font-semibold text-[#ffffff]">জরুরি সেবা ডিরেক্টরি</h2>
-      <p class="text-[#ffffff] px-5 text-sm sm:text-base">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
+      <p class="text-[#ffffff] px-5 text-sm lg:text-base">Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh</p>
     </section>
 
-  
+
     <!-- service section  -->
-     <section class="grid grid-cols-1 sm:grid-cols-12 gap-4 sm:gap-8 bg-[#f5fff6] sm:px-5 py-10 w-[95%] mx-auto sm:w-[100%]">
+    <section
+      class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 bg-[#f5fff6] lg:px-5 py-10 w-[95%] mx-auto lg:w-[100%]">
       <!-- service cards  -->
-      <section class="col-span-1 sm:col-span-9 order-2 sm:order-1">
-      <div class="grid sm:grid-cols-3 gap-5">
-        
-        <!-- service card 1 -->
-          <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
-            <div class="flex justify-between">
-              <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-                <img class="w-[25px] sm:w-[32px]"  src="./assets/emergency.png" alt="">
-              </div>
-              <i class="fa-regular fa-heart"></i>
-            </div>
-            <p class="font-bold sm:text-xl my-1 sm:my-3">জাতীয় জরুরি সেবা</p>
-            <p class="sm:text-xl my-1 sm:my-3">National Emergency</p>
-            <p class="font-bold text-xl">999</p>
-            <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">সার্বজনীন</p>
+      <section id="service-container" class="col-span-1 md:col-span-9 order-2 lg:order-1">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-            <div class="flex sm:gap-2 gap-1">
-              <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>  Call</button>
+          <!-- service card 1 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+            <div class="flex justify-between">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/emergency.png" alt="">
+              </div>
+              <i class="fa-regular  fa-heart"></i>
+            </div>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">জাতীয় জরুরি সেবা</p>
+            <p class="lg:text-xl my-1 lg:my-3">National Emergency</p>
+            <p class="font-bold text-xl">999</p>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">সার্বজনীন
+            </p>
+
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid  fa-phone"></i>
+                Call</button>
             </div>
           </div>
 
-       <!-- service card 2 -->
-          <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+          <!-- service card 2 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
             <div class="flex justify-between">
-              <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-                <img class="w-[25px] sm:w-[32px]" src="./assets/police.png" alt="">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/police.png" alt="">
               </div>
               <i class="fa-regular fa-heart"></i>
             </div>
-            <p class="font-bold sm:text-xl my-1 sm:my-3">পুলিশ</p>
-            <p class="sm:text-xl my-1 sm:my-3">Police</p>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">পুলিশ</p>
+            <p class="lg:text-xl my-1 lg:my-3">Police</p>
             <p class="font-bold text-xl">999</p>
-            <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">পুলিশ</p>
-          
-            <div class="flex sm:gap-2 gap-1">
-              <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i> Call</button>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">পুলিশ</p>
+
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>
+                Call</button>
             </div>
           </div>
 
-      <!-- service card 3 -->
-          <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+          <!-- service card 3 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
             <div class="flex justify-between">
-              <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-                <img class="w-[25px] sm:w-[32px]" src="./assets/fire-service.png" alt="">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/fire-service.png" alt="">
               </div>
               <i class="fa-regular fa-heart"></i>
             </div>
-            <p class="font-bold sm:text-xl my-1 sm:my-3">ফায়ার সার্ভিস</p>
-            <p class="sm:text-xl my-1 sm:my-3">Fire Service</p>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">ফায়ার সার্ভিস</p>
+            <p class="lg:text-xl my-1 lg:my-3">Fire Service</p>
             <p class="font-bold text-xl">999</p>
-            <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">ফায়ার</p>
-          
-            <div class="flex sm:gap-2 gap-1">
-              <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i> Call</button>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">ফায়ার</p>
+
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>
+                Call</button>
             </div>
           </div>
-        <!-- service card 4 -->
-          <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+          <!-- service card 4 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
             <div class="flex justify-between">
-              <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-                <img class="w-[25px] sm:w-[32px]"  src="./assets/ambulance.png" alt="">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/ambulance.png" alt="">
               </div>
               <i class="fa-regular fa-heart"></i>
             </div>
-            <p class="font-bold sm:text-xl my-1 sm:my-3">অ্যাম্বুলেন্স </p>
-            <p class="sm:text-xl my-1 sm:my-3">Ambulance</p>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">অ্যাম্বুলেন্স </p>
+            <p class="lg:text-xl my-1 lg:my-3">Ambulance</p>
             <p class="font-bold text-xl">999</p>
-            <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">সাস্থ্য</p>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">সাস্থ্য</p>
 
-            <div class="flex sm:gap-2 gap-1">
-              <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>  Call</button>
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>
+                Call</button>
             </div>
           </div>
 
-       <!-- service card 5 -->
-          <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+          <!-- service card 5 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
             <div class="flex justify-between">
-              <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-                <img class="w-[25px] sm:w-[32px]" src="./assets/ambulance.png" alt="">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/ambulance.png" alt="">
               </div>
               <i class="fa-regular fa-heart"></i>
             </div>
-            <p class="font-bold sm:text-xl my-1 sm:my-3">নারী ও শিশু সহায়তা</p>
-            <p class="sm:text-xl my-1 sm:my-3">Women & Child Helpline</p>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">নারী ও শিশু সহায়তা</p>
+            <p class="lg:text-xl my-1 lg:my-3">Women & Child Helpline</p>
             <p class="font-bold text-xl">109</p>
-            <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">সহায়তা</p>
-          
-            <div class="flex sm:gap-2 gap-1">
-              <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i> Call</button>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">সহায়তা</p>
+
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>
+                Call</button>
             </div>
           </div>
 
-      <!-- service card 6 -->
-          <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+          <!-- service card 6 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
             <div class="flex justify-between">
-              <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-                <img class="w-[25px] sm:w-[32px]" src="./assets/police.png" alt="">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/police.png" alt="">
               </div>
               <i class="fa-regular fa-heart"></i>
             </div>
-            <p class="font-bold sm:text-xl my-1 sm:my-3">দুদক</p>
-            <p class="sm:text-xl my-1 sm:my-3">Anti-Corruption</p>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">দুদক</p>
+            <p class="lg:text-xl my-1 lg:my-3">Anti-Corruption</p>
             <p class="font-bold text-xl">106</p>
-            <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">সরকারি</p>
-          
-            <div class="flex sm:gap-2 gap-1">
-              <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-              <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i> Call</button>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">সরকারি</p>
+
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>
+                Call</button>
             </div>
           </div>
 
-        <!-- service card 7 -->
-        <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
-          <div class="flex justify-between">
-            <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-              <img class="w-[25px] sm:w-[32px]" src="./assets/ambulance.png" alt="">
+          <!-- service card 7 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+            <div class="flex justify-between">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/ambulance.png" alt="">
+              </div>
+              <i class="fa-regular fa-heart"></i>
             </div>
-            <i class="fa-regular fa-heart"></i>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">বিদ্যুৎ বিভ্রাট</p>
+            <p class="lg:text-xl my-1 lg:my-3">Electricity Dutage</p>
+            <p class="font-bold text-xl">16216</p>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">বিদ্যুৎ</p>
+
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
           </div>
-          <p class="font-bold sm:text-xl my-1 sm:my-3">বিদ্যুৎ বিভ্রাট</p>
-          <p class="sm:text-xl my-1 sm:my-3">Electricity Dutage</p>
-          <p class="font-bold text-xl">16216</p>
-          <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">বিদ্যুৎ</p>
-        
-          <div class="flex sm:gap-2 gap-1">
-            <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i> Call</button>
+
+          <!-- service card 8 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+            <div class="flex justify-between">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/ambulance.png" alt="">
+              </div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">ব্র্যাক </p>
+            <p class="lg:text-xl my-1 lg:my-3">Brac</p>
+            <p class="font-bold text-xl">16450</p>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">এনজিও</p>
+
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+
+          <!-- service card 9 -->
+          <div class="rounded-md lg:rounded-xl p-4 lg:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
+            <div class="flex justify-between">
+              <div
+                class="bg-[#ffe3e2] w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  rounded-2xl flex items-center justify-center">
+                <img class="w-[25px] lg:w-[32px]" src="./assets/Bangladesh-Railway.png" alt="">
+              </div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="font-bold lg:text-xl my-1 lg:my-3">বাংলাদেশ রেলওয়ে</p>
+            <p class="lg:text-xl my-1 lg:my-3">Bangladesh Railway</p>
+            <p class="font-bold text-xl">163</p>
+            <p class="bg-gray-200 inline-block px-3 lg:px-5 py-2 lg:py-3 rounded-full my-2 lg:my-3 text-sm">পরিবহন</p>
+
+            <div class="flex lg:gap-2 gap-1">
+              <button class="btn flex-1 p-2 lg:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
+              <button  class="callBtn btn flex-1  p-2 lg:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
           </div>
         </div>
-        
-        <!-- service card 8 -->
-        <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
-          <div class="flex justify-between">
-            <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-              <img class="w-[25px] sm:w-[32px]" src="./assets/ambulance.png" alt="">
-            </div>
-            <i class="fa-regular fa-heart"></i>
+      </section>
+
+
+      <!-- Call History section  -->
+      <aside id="historyContainer"
+        class="order-1 lg:order-2 col-span-1  lg:col-span-3 p-3 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]  bg-[#FFFFFF] rounded-xl   ">
+
+        <div class="flex justify-between items-center p-3 border-b border-gray-300">
+          <div class="flex justify-between gap-2 items-center">
+            <i class="fa-regular fa-clock"></i>
+            <h2 class="font-bold">Call History</h2>
           </div>
-          <p class="font-bold sm:text-xl my-1 sm:my-3">ব্র্যাক </p>
-          <p class="sm:text-xl my-1 sm:my-3">Brac</p>
-          <p class="font-bold text-xl">16450</p>
-          <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">এনজিও</p>
-        
-          <div class="flex sm:gap-2 gap-1">
-            <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i> Call</button>
+          <div
+            class="flex justify-between items-center text-white bg-[#00A63E] lg:py-3 px-2 text-sm lg:px-8 rounded-full font-semibold">
+            <button class="block clearBtn" >
+              Clear
+            </button>
           </div>
         </div>
-        
-        <!-- service card 9 -->
-        <div class="rounded-md sm:rounded-xl p-4 sm:p-8 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] bg-white">
-          <div class="flex justify-between">
-            <div class="bg-[#ffe3e2] w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]  rounded-2xl flex items-center justify-center">
-              <img class="w-[25px] sm:w-[32px]" src="./assets/Bangladesh-Railway.png" alt="">
-            </div>
-            <i class="fa-regular fa-heart"></i>
-          </div>
-          <p class="font-bold sm:text-xl my-1 sm:my-3">বাংলাদেশ রেলওয়ে</p>
-          <p class="sm:text-xl my-1 sm:my-3">Bangladesh Railway</p>
-          <p class="font-bold text-xl">163</p>
-          <p class="bg-gray-200 inline-block px-3 sm:px-5 py-2 sm:py-3 rounded-full my-2 sm:my-3 text-sm">পরিবহন</p>
-        
-          <div class="flex sm:gap-2 gap-1">
-            <button class="btn flex-1 p-2 sm:p-4"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn flex-1  p-2 sm:p-4 bg-[#00A63E] text-[#FFFFFF]"> <i class="fa-solid fa-phone"></i> Call</button>
-          </div>
+
+        <div id="item-container" class="space-y-4 mt-3">
+         
         </div>
-      </div>
-     </section>
 
-     
-     <!-- Call History section  -->
-        <aside class="order-1 sm:order-2 col-span-1 sm:col-span-3 p-3 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]  bg-[#FFFFFF] rounded-xl   " >
-
-             <div class="flex justify-between items-center p-3">
-                <div class="flex justify-between gap-2 items-center">
-                  <i class="fa-regular fa-clock"></i>
-                  <h2>Call History</h2>
-                </div>
-                <div
-                  class="flex justify-between items-center text-white bg-[#00A63E] sm:py-3 px-2 text-sm sm:px-8 rounded-full font-semibold">
-                  <button class="block">
-                    Clear
-                  </button>
-                </div>
-             </div>    
-
-        </aside>
-     </section>
+      </aside>
+    </section>
   </main>
-
+  <script src="./script.js"></script>
 </body>
 
 </html>
-
