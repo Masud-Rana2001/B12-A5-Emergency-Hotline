@@ -57,10 +57,11 @@ const historyContainer = getById("historyContainer");
 historyContainer.addEventListener("click", (e) => {
   // clear button 
   if (e.target.className.includes("clearBtn")) {
-    heartNumber.textContent = 0;
+    
     pointNumber.textContent = 100;
     copyNumber.textContent = 0;
     getById("item-container").innerHTML = ''
+  
   }
 });
 
