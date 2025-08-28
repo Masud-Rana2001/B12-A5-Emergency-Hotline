@@ -54,8 +54,8 @@ serviceContainer.addEventListener("click", (e) => {
 
 const historyContainer = getById("historyContainer");
 
+// clear button 
 historyContainer.addEventListener("click", (e) => {
-  // clear button 
   if (e.target.className.includes("clearBtn")) {
     
     pointNumber.textContent = 100;
@@ -65,6 +65,8 @@ historyContainer.addEventListener("click", (e) => {
   }
 });
 
+
+// copy 
 document.addEventListener("click", async (e) => {
   const btn = e.target.closest(".copy-btn");
   if (!btn) return;
